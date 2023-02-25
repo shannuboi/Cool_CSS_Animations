@@ -1,0 +1,98 @@
+#a1 .pacman {
+	background-color: #f4f404;
+	position: absolute;
+	width: 30%;
+	height: 15%;
+	top: 35%;
+	right: 35%;
+}
+
+@keyframes PacmanEatUp {
+	0%   { transform: rotate(00deg); }
+	50%  { transform: rotate(-45deg); }
+	100% { transform: rotate(00deg); }
+}
+@keyframes PacmanEatDown {
+	0%   { transform: rotate(00deg); }
+	50%  { transform: rotate(45deg); }
+	100% { transform: rotate(00deg); }
+}
+
+#a1 #topjaw {
+	border-radius: 50% 50% 0% 0% / 100% 100% 0% 0%;
+	transform-origin: bottom center;
+	
+	animation-name: PacmanEatUp;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+}	
+#a1 #bottomjaw {
+	border-radius: 0% 0% 50% 50% / 0% 0% 100% 100%;
+	transform-origin: top center;
+	top: 50%;
+	
+	animation-name: PacmanEatDown;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+}
+
+#a1 #pacmanEye {
+	background-color: #100000;
+	height: 4%;
+	width: 4%;
+	border-radius: 50%;
+	transform-origin: bottom left;
+	left: 50%;
+	top: 38.5%;
+	
+	animation-name: PacmanEatUp;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes PacmanFoodMove {
+	0%   { transform: translateX(0%); }
+	100% { transform: translateX(calc(15% - 5.1vw)); }
+}
+
+#a1 .food {
+	background-color: #ffffff;
+	position: absolute;
+	width: 3.5%;
+	height: 3.5%;
+	top: 47.25%;
+	border-radius: 50%;
+	
+	animation-name: PacmanFoodMove;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+#a1 #f1 {
+	left: 65%
+}
+
+#a1 #f2 {
+	left: 80%
+}
+
+#a1 #f3 {
+	left: 95%
+}
+
+#a1 .mazeBorder {
+	background-color:  #2121de;
+	position: absolute;
+	width: 92%;
+	height: 1.5%;
+	left: 4%;
+}
+
+#a1 #topMazeBorder {
+	top: 25%;
+}
+
+#a1 #bottomMazeBorder {
+	bottom: 25%;
+}
