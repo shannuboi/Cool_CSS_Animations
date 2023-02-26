@@ -1,24 +1,28 @@
 @keyframes dampball {
 	0% { height: 80%; }
-	100% { height: 30% }
+	100% { height: 20% }
 }
 
 @keyframes bouncingball {
-    0%  {
+    0% {
+        bottom: 90%;
+        animation-timing-function: ease-in;
+    }
+    49%  {
+        bottom: 0%;
+		transform: scaleX(1) scaleY(1);
+    }
+    50%  {
         bottom: 0%;
 		transform: scaleX(1.5) scaleY(0.75);
     }
-	4%  {
+	54%  {
         bottom: 0%;
         animation-timing-function: ease-out;
 		transform: scaleX(1) scaleY(1);
     }
-    50% {
-        bottom: 90%;
-        animation-timing-function: ease-in;
-    }
     100% {
-        bottom: 0%;
+        bottom: 90%;
     }
 }
 
@@ -34,7 +38,7 @@
 	bottom: 20%;
 	
 	animation-name: dampball;
-	animation-duration: 3s;
+	animation-duration: 2s;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
 }
@@ -48,7 +52,7 @@
 	right: 0%;
 	
 	animation-name: moveball, bouncingball;
-	animation-duration: 3s, 1s;
+	animation-duration: 2s, 1s;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear, ease-in-out;
 }

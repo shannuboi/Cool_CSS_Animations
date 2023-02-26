@@ -10,7 +10,7 @@
 	
 	#wrapper {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: 3;
 		grid-template-rows: 2;
 		grid-gap: 3vw;
 	}
@@ -51,6 +51,7 @@
 
 <link rel="stylesheet" href="pacman.css">
 <link rel="stylesheet" href="bouncy_ball.css">
+<link rel="stylesheet" href="gradient_circle.css">
 
 </head>
 <body>
@@ -59,9 +60,11 @@
 			<div class="food" id="f1"></div>
 			<div class="food" id="f2"></div>
 			<div class="food" id="f3"></div>
+			
 			<div class="pacman" id="topjaw"></div>
 			<div class="pacman" id="bottomjaw"></div>
 			<div class="pacman" id="pacmanEye"></div>
+			
 			<div class="mazeBorder" id="topMazeBorder"></div>
 			<div class="mazeBorder" id="bottomMazeBorder"></div>
 		</div>
@@ -74,6 +77,8 @@
 		</div>
 		
 		<div class="animation" id="a3">
+			<div id="gradientCircle"></div>
+			<div id="blur"></div>
 		</div>
 		
 		<div class="animation" id="a4">
