@@ -23,7 +23,7 @@
 	transform-origin: bottom center;
 	
 	animation-name: PacmanEatUp;
-	animation-duration: 0.5s;
+	animation-duration: 0.42s;
 	animation-iteration-count: infinite;
 }	
 #a1 #bottomjaw {
@@ -32,7 +32,7 @@
 	top: 50%;
 	
 	animation-name: PacmanEatDown;
-	animation-duration: 0.5s;
+	animation-duration: 0.42s;
 	animation-iteration-count: infinite;
 }
 
@@ -46,13 +46,13 @@
 	top: 38.5%;
 	
 	animation-name: PacmanEatUp;
-	animation-duration: 0.5s;
+	animation-duration: 0.42s;
 	animation-iteration-count: infinite;
 }
 
 @keyframes PacmanFoodMove {
 	0%   { transform: translateX(0%); }
-	100% { transform: translateX(calc(15% - 5.1vw)); }
+	100% { transform: translateX(calc(15% - 5.07vw)); }
 }
 
 #a1 .food {
@@ -64,7 +64,7 @@
 	border-radius: 50%;
 	
 	animation-name: PacmanFoodMove;
-	animation-duration: 0.5s;
+	animation-duration: 0.42s;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
 }

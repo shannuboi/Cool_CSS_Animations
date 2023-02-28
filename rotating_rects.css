@@ -1,0 +1,43 @@
+@keyframes rectRotation {
+	0% { transform: rotate(0deg); }
+	20% { transform: rotate(0deg); }
+	80% { transform: rotate(180deg); }
+	100% { transform: rotate(180deg); }
+}
+
+#a4 .rotatingRects {
+	background-color: #00a6a7;
+	position: absolute;
+	width: 25%;
+	height: 25%;
+	
+	animation-name: rectRotation;
+	animation-duration: 2.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate;
+}
+
+#a4 #rect1 {
+	right: 50%;
+	bottom: 50%;	
+	border-radius: 100% 0% 0% 0%;
+}
+
+#a4 #rect2 {
+	left: 50%;
+	bottom: 50%;	
+	border-radius: 0% 100% 0% 0%;
+}
+
+#a4 #rect3 {
+	left: 50%;
+	top: 50%;	
+	border-radius: 0% 0% 100% 0%;
+}
+
+#a4 #rect4 {
+	right: 50%;
+	top: 50%;	
+	border-radius: 0% 0% 0% 100%;
+}
