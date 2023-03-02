@@ -1,0 +1,139 @@
+#a5 .stickfigure {
+	position: absolute;
+	background-color: white;
+}
+
+@keyframes faceAjustment {
+	0% { transform: rotate(0deg); } 
+	10% { transform: rotate(-15deg); } 
+	80% { transform: rotate(-15deg); } 
+	100% { transform: rotate(0deg); } 
+}
+
+#a5 #face {
+	width: 15%;
+	height: 15%;
+	border-radius: 50%;
+	
+	left: 40%;
+	top: 10%;
+	
+	transform-origin: bottom center;
+	
+	animation-name: faceAjustment;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+}
+
+#a5 #torso {
+	width: 3%;
+	height: 30%;
+	
+	left: 46%;
+	top: 24%;	
+	
+	transform-origin: bottom center;
+}
+
+#a5 .thigh {
+	width: 3%;
+	height: 20%;
+	
+	left: 46%;
+	top: 54%;
+	
+	transform-origin: top center;
+}
+
+#a5 #leftthigh {	
+	transform: rotate(-10deg);
+}
+
+#a5 #rightthigh {	
+	transform: rotate(10deg);
+}
+
+#a5 .lowerleg {	
+	width: 3%;
+	height: 25%;
+	
+	transform-origin: top center;
+}
+
+#a5 #leftlowerleg {
+	left: 42.75%;
+	top: 72%;
+	
+	transform: rotate(5deg);
+}
+
+#a5 #rightlowerleg {
+	left: 49.75%;
+	top: 72%;
+	
+	transform: rotate(-5deg);
+}
+
+#a5 .upperarm {
+	width: 3%;
+	height: 20%;
+	
+	left: 46%;
+	top: 24%;
+	
+	transform-origin: top center;
+}
+
+#a5 #leftupperarm {
+	transform: rotate(30deg);
+}
+
+#a5 #rightupperarm {
+	transform: rotate(-30deg);
+}
+
+#a5 .forearm {
+	width: 3%;
+	height: 17%;
+	
+	transform-origin: top center;
+}
+
+@keyframes handAjustment {
+	0% { transform: rotate(20deg); } 
+	10% { transform: rotate(-15deg); } 
+	80% { transform: rotate(-15deg); } 
+	100% { transform: rotate(20deg); } 
+}
+
+#a5 #leftforearm {
+	left: 36%;
+	top: 41%;
+	
+	transform: rotate(20deg);
+	
+	animation-name: handAjustment;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes waveAnimation {
+	0% { transform: rotate(-20deg); }
+	25% { transform: rotate(-190deg); }
+	40% { transform: rotate(-140deg); }
+	55% { transform: rotate(-190deg); }
+	70% { transform: rotate(-140deg); }
+	90% { transform: rotate(-20deg); }
+}
+
+#a5 #rightforearm {
+	left: 56%;
+	top: 41%;
+	
+	transform: rotate(-20deg);
+	
+	animation-name: waveAnimation;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
